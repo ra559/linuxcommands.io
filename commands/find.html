@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title>Find</title>
+</head>
+ <body>
+    <h1>The find command</h1>
+    <h2>Description:</h2>
+        <p>The find command is used for finding files in your system</p>
+    <h2>Usage:</h2>
+        <p class="cmds">find [start point]  [option] [file name]</p>
+    <h2>Example:</h2>
+        <p>Find a file in the home directory</p>
+            <p class="cmds">find /home/$USER -name "program.py"</p>
+        <p>Find a file in the home directory ignoring case sensitivity</p>
+          <p class="cmds">find /home/$USER -iname "program.py"</p>
+        <p>Find a directory</p>
+          <p class="cmds">find / -type d -name "games"</p>
+        <p>Find files using their persmissions</p>
+           <p class="cmds">find / -type f -perm 644 </p>
+        <p>Find and remove files</p>
+            <p class="cmds">find /home/$USER -type f -name "*.docx" -exec rm -f {} \;</p>
+        <p>Find empty files</p>
+            <p class="cmds">find /home/$USER -type -f -empty</p>
+        <p>Find empty directories</p>
+            <p class="cmds">find /home/$USER -type -d -empty</p>
+        <p>Find hidden files</p>
+            <p class="cmds">find / -type -f name ".*"</p>
+        <p>Find all files modified in last 7 days</p>
+            <p class="cmds">find / -atime 7</p>
+        <p>Find all files modifed more than a week ago and less than a month</p>
+            <p class="cmds">find / -mtime +7 -mtime -30</p>
+        <p>Find all files which size are 1GB</p>
+            <p class="cmds">find / -size 1024M</p>
+        <p> For more information, read the man page</p>
+</body>
+<footer>
+    <a href="./diff.html" ><i class="fa fa-arrow-left"></i></a>
+    <a href="../home.html"><i class="fa fa-home"></i></a>
+    <a href="gnome-open.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>

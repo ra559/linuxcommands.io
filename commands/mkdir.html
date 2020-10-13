@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>mkdir command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+	</head>
+
+	<body>
+		<h1>Using the mkdir command</h1>
+		<h2>Description</h2>
+			<p>Creates empty directories</p>
+		<h2>Usage</h2>
+			<p>mkdir [options] [directory name]</p>
+		<h2>Examples</h2>
+			<p>Creates a new directory named “rock” under the present working directory.</p>
+				<span>mkdir rock</span>
+			<p>Creates a new directory named rock under the music directory (relative path).</p>
+				<span>mkdir Music/rock</span>
+			<p>Creates two new directories called “rock” and “jazz”.</p>
+				<span>mkdir blues jazz</span>
+			<p>The “\” character is a escape character used for escaping a space.</p>
+				<span>mkdir /home/john/Music/rap\ music</span>
+			<p>You can surround the argument in quotation marks to avoid using the escape character (\)</p>
+				<span>mkdir “/home/john/music/Latin Music”</span>			
+		<h3>Let's see more complex examples:</h3>
+			<p>Bob wants to create 3 directories in the Documents directory: math english linux, however, his present working directory is /usr/share
+			How can he create the 3 directories without changing his present working directory?
+			</p>
+				<b>Option 1) </b><span>mkdir /home/$USER/Documents/math /home/$USER/Documents/english /home/$USER/Documents/linux</span><br>
+				<b>Option 2) </b><span>mkdir ~/Documents/math ~/Documents/english ~/Documents/linux</span><br>
+				<b>Option 3) </b><span>mkdir $HOME/Documents/math $HOME/Documents/english $HOME/Documents/linux</span><br>
+				<b>Option 4) </b><span>mkdir ~/Documents/{math,english,linux}</span>
+			<p>Bob wants to make 2 directories: history biology, however, he also wants to make 2 more directories inside these 2 directories.
+			How can he achieve this?
+			</p>
+				<b>Option 1) </b><span>mkdir -p Documents/history/fall Documents/history/spring Documents/biology/fall Documents/biology/spring </span><br>
+				<b>Option 2) </b><span>mkdir -p Documents/history/{fall,spring} Documents/biology/{fall,spring}</span><br>
+				<b>Option 3) </b><span>mkdir -p Documents/{history,biology}/{fall,spring}</span><br>
+			
+	</body>
+
+</html>

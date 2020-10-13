@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title>Tr</title>
+</head>
+ <body>
+    <h1> The tr command</h1>
+    <h2>Description:</h2>
+        <p> The tr command is used for translating or deleting characters from standard output.</p>
+    <h2>Usage:</h2>
+        <p clas="cmds">[command output] | tr [option] [set] [set]</p>
+    <h2>Example:</h2>
+        <p>Translate . to , (or any other characters given)</p>
+            <p class="cmds">cat file.txt | tr '.' ',' file.txt</p>
+        <p>Translate white space into tabs </p>
+          <p class="cmds">cat file.py | tr [:space:] '\t'</p>
+        <p>Translate tabs into space</p>
+          <p class="cmds">cat file.py | tr -s "[:space:]" ' '</p>
+        <p>Delete specified character (delete all upper case letters):</p>
+           <p class="cmds">cat file.txt | tr -d '[:upper:]'</p>
+        <p>Delete all characters except lower case letters</p>
+          <p class="cmds">cat file | tr -cd "[:lower:]" </p>
+        <p>Convert all lower case characters to upper case characters</p>
+            <p class="cmds">cat file.txt | tr "[a-z]" "[A-Z]"</p>
+            <p>Or use:</p>
+            <p class="cmds">cat file.txt | tr "[:lower:]" "[:upper:]"</p>
+
+        <h3>Regular Expressions character classes:</h3>
+        <table>
+            <tr>
+                <th>POSIX class</th>
+                <th>Represents</th>
+                <th>Means</th>
+            </tr>
+            <tr>
+                <td>[:upper:]</td>
+                <td>[A-Z]</td>
+                <td>Upper case letters</td>
+            </tr>
+            <tr>
+                <td>[:lower:]</td>
+                <td>[a-z]</td>
+                <td>Lower case letters</td>
+            </tr>
+            <tr>
+                <td>[:alpha:]</td>
+                <td>[A-Za-z]</td>
+                <td>Upper and Lower case letters</td>
+            </tr>
+            <tr>
+                <td>[:alnum:]</td>
+                <td>[A-Za-z0-9]</td>
+                <td>Lower case, upper case, and digits</td>
+            </tr>
+            <tr>
+                <td>[:digit:]</td>
+                <td>[0-9]</td>
+                <td>digits</td>
+            </tr>
+            <tr>
+                <td>[:xdigit:]</td>
+                <td>[0-9A-Fa-f]</td>
+                <td>hexadecimal digits</td>
+            </tr>
+            <tr>
+                <td>[:punct:]</td>
+                <td>[.,!?:...]</td>
+                <td>puctuation</td>
+            </tr>
+            <tr>
+                <td>[:blank:]</td>
+                <td>[\t]</td>
+                <td>space and tabs</td>
+            </tr>
+            <tr>
+                <td>[:cntrl:]</td>
+                <td>n/a</td>
+                <td>control characters</td>
+            </tr>
+            <tr>
+                <td>[:graph:]</td>
+                <td>[^\t\n\r\g\v]</td>
+                <td>printed characters withou spaces</td>
+            </tr>
+            <tr>
+                <td>[:print:]</td>
+                <td>[^\t\n\r\g\v]</td>
+                <td>printed characters including spaces</td>
+            </tr>
+            <tr>
+                <td>[:space:]</td>
+                <td>[ \t\n\r\g\v]</td>
+                <td>whitespace characters</td>
+            </tr>
+            
+        </table>
+        <p> For more information, read the man page</p>
+</body>
+<footer>
+    <a href="./wc.html" ><i class="fa fa-arrow-left"></i></a>
+    <a href="../home.html"><i class="fa fa-home"></i></a>
+    <a href="diff.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>

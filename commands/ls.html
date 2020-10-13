@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>ls command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}
+						
+						
+		</style>
+	</head>
+	<body>
+		<h1>Using the ls command</h1>
+		<h2>Description</h2>
+		<p>list files and directories.</p>
+		<h2>Usage</h2>
+		<p>ls [options] [directory]</p>
+
+		<h3>Examples:</h3>
+			<p>list all files inside the present working directory</p>
+				<span>ls</span> 
+			<p>list all files inside the present working directory including hidden files</p>
+				<span>ls -a</span>
+			<p>long list all files inside the pwd</p>
+				<span>ls -l</span>
+			<p>you can convine different options for example:
+				long list all files including hidden files inside the </p>
+				<span>ls -la</span>	
+		<h3>lets see more complex examples:</h3>
+			<p>Bob wants to list all the files in the Music directory with the author</p>
+				<span>ls -la --author /home/$USER/Music</span>
+			<p>Bob's manager asked him to list of all the files (excluding hidden)
+			inside the home directory of a user named Maria including their file size in human
+			readable format and sorted by file size</p>
+				<span>ls -shS /home/Maria/Downloads</span>
+			<p>Bob wants to see the size, author, and inode number of 3 directories 'Virtual Machines' Music ".pccc's files"</p>
+				<span> ls -slid --author "Virtual Machines" Music ".pccc's files" </span>
+			<h4>for more options, read the man page of the ls command</h4>
+		
+	</body>
+
+</html>

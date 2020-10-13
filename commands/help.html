@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Getting Help</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+		</style>
+		
+	</head>
+
+	<body>
+		<h1>Getting Help</h1>
+		<h2>The man command</h2>
+		<ul>
+			<li>Man (manual) pages are documentation files that describe Linux shell commands, executable programs, system calls, special files, and so forth. </li>
+			<li>Man pages are not step-by-step guides, but instead quick references</li>
+			<li>To view the manual of a command type: man + command. </li>
+			<li>Example:<br>man ls</li>
+			<li>To navigate the man page of a command, you can use the arrow key or the man command internal shortcuts.</li>
+			<li>To exit the man page press letter “q”</li>
+		</ul>
+		<h2>Examples:</h2>
+			<p>Open the man page of the passwd command</p>
+				<span>man passwd</span>
+			<p>Open a specific man page for the passwd command</p>
+				<span>man 5 passwd</span>
+			<p>Show the man page section of the passwd command</p>
+				<span>man -f passwd</span>
+			<p>Show all the available pages of a command</p>
+				<span>man -a passwd</span>
+			<p>Searches for a man page for a given word or regular expression or phrase.</p>
+				<span>man -k file</span>
+		<h1>Other ways of getting help</h1>
+			<p>Use the command options --help</p>
+				<span>ls --help</span>
+				<span>cat --h</span>
+			<p>The apropos command list all the applicable man pages for a given command</p>
+				<span>apropos wget</span>
+			<p>The whatis command shows a brief snippet of information about a given command</p>
+				<span>whatis ssh</span>
+			<p>An alternative to man is info which works in a similar way but it is more modern and with more options.</p>
+				<span>info wget</span>
+	</body>
+
+</html>

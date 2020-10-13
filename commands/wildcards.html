@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Wildcards</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #D5F8FF;
+				line-height: 2em;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4,th{
+				font-size: 2em;
+				}
+			table{
+				margin: auto;
+				}
+			td{
+				padding: 1%;
+				}
+			p,li,td{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+		</style>
+	</head>
+
+	<body>
+		<h1>Using Wildcards</h1>
+		<h2>Description:</h2>
+			<p>Wildcard represents letters and characters used to specify a filename for searches. </p>
+			<p>File globbing is the processing of pattern matching using wildcards. </p>
+			<p>The wildcards are officially called metacharacter wildcards.</p>
+	
+			<h3>For Example:</h3>
+			<ul>	
+				<li>You can use a wildcard to get a long list of all files in the current directory starting with “new.” </li>
+				<li>Use wildcards to navigate to directories faster</li>
+				<li>Move or delete a group of files</li>
+				<li>Locate files based on a portion of their filenames</li>
+				<li>Create files and directory  quicker</li>
+			</ul>
+			<table>
+				<tr>
+					<th>Wildcard</th>
+					<th>Description</th>
+					<th>Example</th>
+				</tr>
+				<tr>
+					<td>*</td>
+					<td>Matches zero or more characters in a file name</td>
+					<td>ls *.txt</td>
+				</tr>
+				<tr>
+					<td>?</td>
+					<td>Matches any one character in a filename</td>
+					<td>ls f?l?.txt</td>
+				</tr>
+				<tr>
+					<td>[aei]</td>
+					<td>Matches one of multiple characters in a filename; in this case a,e,i</td>
+					<td>ls f[a,e,i]le.txt</td>
+				</tr>
+				<tr>
+					<td>[a-z]</td>
+					<td>Matches one of a range of characters in a filename; in this case any character from a to z</td>
+					<td>ls f[a-z]le.txt</td>
+				</tr>
+				<tr>
+					<td>[!m-x]</td>
+					<td>Matches filenames that do not contain a specified range of characters; <br>in this example filenames that do not contain letters m to x</td>
+					<td>ls f[!m-x]le.txt</td>
+				</tr>
+			</table>
+			<h3>More advanced wildcards</h3>
+				<p>Although this is not filename expansion, another useful bash shell feature is the capability to expand a list of strings contained within curly brackets.</p>
+				<h4>Examples:</h4>
+					<span>ls -ld /etc/rc{0,1,2,3,4,5,6}.d</span><br>
+					<span>mkdir movies{1,3,5}</span><br>
+					<span>touch notes_for_{math,english,linux}.txt</span><br>
+				<p>You can use [...] for filename expansion, for example:</p>
+				<ul>
+					<li>The ability to define a range for example [a-z] or [1-9] or [001-3]. Alternatively, you can use: [:alpha:] or [:digit:].</li>
+						<ul>
+							<li>[:alpha:] Alphabetic (case insensitive)</li>
+							<li>[:lower:] Lower case printable characters</li>
+							<li>[:upper:] Upper printable characters</li>
+							<li>[:digit:] Numbers in decimal from 0 to 9</li>
+							<li>[:alnum:] Alphanumeric (all digits and alphabetic characters)</li>
+							<li>[:space:] White space (space, tabs, and new lines)</li>
+							<li>[:graph:] Printable characters excluding spaces</li>
+							<li>[:print:] Printable characters including spaces</li>
+							<li>[:punct:] Punctuation</li>
+							<li>[:cntrl:] Control characters</li>
+							<li>[:xdigit:] Hexadecimal characters</li>		
+						</ul>
+					<li>You can also specify a list of characters to match by placing them between the brackets. Like [aeiou] or [12345]</li>
+					<li>You can also use the [] to match the - character like this [-aeiou] or [aeiou-]</li>
+				</ul>
+	</body>
+
+</html>

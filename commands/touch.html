@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8" />
+		<title>touch command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>		
+	</head>
+
+	<body>
+		<h1>Using the touch command</h1>
+		<h2>Description</h2>
+			<p>Changes file timestamps but if the file does not exist it creates it </p>
+		<h2>Usage</h2>
+			<p>touch [options] [file name]</p>
+		<h2>Examples</h2>
+			<p>Create an empty file</p>
+				<span>touch notes.txt</span>
+			<p>Creates several empty files</p>
+				<span>touch 'math problems.txt' script.sh bob\ website.html "maria's expenses"</span>
+			<p>Creates an empty file (absolute path)</p>
+				<span>touch /home/$USER/Downloads/homework/lab.docx</span>
+			<p>Creates several directories (absolute path)</p>
+				<span>touch /home/$USER/Documents/{math.txt,biology.xls,web.js}</span>
+
+	</body>
+
+</html>
+

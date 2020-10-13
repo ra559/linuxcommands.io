@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>mv command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+	</head>
+
+	<body>
+		<h1>Using the mv command</h1>
+		<h2>Description</h2>
+			<p>Moves files and directories. Also renames files and directories</p>
+		<h2>Usage</h2>
+			<b>Move:</b> <p>mv [options] [file to move] [destination]</p>
+			<b>Rename:</b> <p>mv [options] [file to rename] [new file name]</p>
+		<h2>Examples</h2>
+		<p>Using absolute paths</p>
+			<span>mv /home/adrian/Downloads/notes.txt  /home/adrian/Documents</span>
+		<p>Using relative paths</p>
+			<span>mv Downloads/bash_notes.txt Documents/cis106/</span>
+		<p>Mixing Relative Paths and Absolute path</p>
+			<span>mv /home/adrian/Downloads/ocean.png Documents/homework/</span>
+		<p>Using ~ and $HOME</p>
+			<span>mv ~/Pictures/DR/hotel.png mv “$HOME/Pictures/Website Project/”</span>
+		<p>Renaming a Directory with absolute path</p>
+			<span>mv /home/adrian/Pictures/Trip_To_Disney /home/adrian/Pictures/Maria_BD</span>
+		<p>Renaming a file with relative path</p>
+			<span>mv Downloads/homework1.pdf Downloads/homework_w1.pdf</span>
+		<p>Renaming a file with ~ and $HOME</p>
+			<span>mv ~/Downloads/script.py $HOME/Downloads/script.sh</span>
+		<p>Renaming and moving a file in the same command</p>
+			<span>mv ~/Pictures/logo.png ~/Documents/company_logo_4x4.svg</span>
+				
+		<h2>Let's see more complex examples</h2>
+		<p>Bob needs to move all the JPG files inside the Pictures directory and inside Documents directory to a directory called backupFiles</p>
+			<span>mv Pictures/*.jpg Documents/*.jpg backupFiles</span>
+		<p>Bob is being asked to rename a script.sh to script.sh.bk and move it the backupFiles directory. Bob present working directory is /usr/share and the script is located in the Documents directory.</p>
+			<span>mv /home/$USER/Documents/script.sh ~/backupFiles/script.sh.bk</span>
+	</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Hard and soft links</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+	</head>
+
+	<body>
+		<h1>Hard and Soft Links</h1>
+		<h2>Hard Links</h2>
+			<ul>
+				<li>Are files that point to data on the hard drive (associates a name with a file on a file system).</li>
+				<li>Hard links share the same inode number</li>
+				<li>The data isn’t deleted until the last link is deleted</li>
+				<li>If one file is changed, all the hard links will change as well</li>
+				<li>To create a hard link use the command:
+					<p>Usage</p>
+					<p>ln + file + new hard link</p>
+					<p>Example:</p>
+					<span>ln homework.docx homeworkHL.docx</span>
+				</li>				
+			</ul>
+		<h2>Symbolic (soft) links</h2>
+			<ul>
+				<li>Are special types of files that point to other files instead of pointing to data on the hard drive. </li>
+				<li>Symbolic links are the equivalent of shortcuts in a Windows environment</li>
+				<li>To create a hard link use the command: 
+					<p>Usage</p>
+					<p>ln -s + file + new hard link</p>
+					<p>Example:</p>
+					<span>ln -s homework.docx homeworkSL.docx</span>
+				</li>
+			</ul>
+	</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title> </title>
+</head>
+ <body>
+        <h1>Redirecting Standard Input and Output</h1>
+        <h3>Standard file descriptors</h3>
+        <p style="font-size: 1.5em;">What is a file descriptor?</p>
+        <p >As you already know, linux handles every object as a file, including the input and output of commands and processes.
+            <b>File descriptors</b> are positive integers used for identifying open files in a given session. Each process is allowed
+            9 file descriptors at time. Bash reservers the first 3 file descriptors (0-2). These descriptors are used for directing the
+            input and output of commands. By default the shell directs the output to the screen.
+        </p>
+        <table>
+            <tr>
+               <p style="text-align:center; font-size: 1.5em;"> Linux Standard File descriptors</p>
+            </tr>
+            <tr>
+                <td>File Descriptor</td>
+                <td>Abbreviation</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>STDIN</td>
+                <td>Standard Input</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>STDOUT</td>
+                <td>Standard Output</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>STDERR</td>
+                <td>Standard Error</td>
+            </tr>
+
+        </table>
+        <p style="font-size: 1.5em;"> STDIN</p>
+        <p>The STDIN file descriptor references the standard input to the shell. For a
+                terminal interface, the standard input is the keyboard. To Replace the 
+            standard input file descriptors with a file use the < symbol.</p>
+            <p>Example:</p>
+            <p class="cmds">cat < users.csv</p>
+        <p style="font-size: 1.5em; "> STDOUT</p>
+        <p>The STDOUT file descriptor references the standard output for the shell. On
+                a terminal interface, the standard output is the terminal monitor. To redirect the standard output of a command 
+            you can use the > symbol.</p>
+            <p>Example:</p>
+            <p class="cmds">ls -l > directories.txt</p>
+        <p style="font-size: 1.5em;"> STDERR</p>
+        <p>The shell handles error messages using the special STDERR file descriptor.
+                The STDERR file descriptor references the standard error output for the
+                shell. This is the location where the shell sends error messages generated
+                by the shell or programs and scripts running in the shell.
+                By default, the STDERR file descriptor points to the same place as the
+                STDOUT file descriptor (even though they are assigned different file
+                descriptor values). This means that, by default, all error messages go to
+                the monitor display. Standard errors are cannot be redirected the same way that standard output is. 
+            In this case we use the 2> character combination to let the shell know to redirect the error.</p>
+            <p>Example:</p>
+            <p class="cmds">ls -l wrongfile 2> error.txt</p>
+            <p> Sometimes you want to store the data and the errors in case any is given. Specially working with scripts.</p>
+            <p class="cmds">ls -l goodfile badfile 1> longlist.txt 2> errors.txt </p>
+            <p>To list all file descriptors, use the lsof command</p>
+            <p class="cmds">lsof</p>
+            <p>You can also discard all standard ouput data by sending it to the null file, which is a file that contains nothing.
+                The null file is also called "the black hole".
+            </p>
+            <p class="cmds">ls -l badfile > /dev/null</p>
+            <p>Also if you only want to discard error messages:</p>
+            <p class="cmds"> ls -l badfile goodfile 2> /dev/null</p>
+            <h3>The pipe ( | )</h3>
+            <p>The pipe allows you to redirect the standard output of a command to the standard input of another.</p>
+            Example:
+            <p class="cmds">cat logs.log | less </p>
+
+        <p style="text-align: center;">This page is a summary of Chapter 15 of <a href="https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/111898384X/ref=pd_bxgy_img_2/145-5652962-6449511?_encoding=UTF8&pd_rd_i=111898384X&pd_rd_r=2939ce03-851f-4642-aedf-ae08530b8a8a&pd_rd_w=A1HHp&pd_rd_wg=91RWA&pf_rd_p=09627863-9889-4290-b90a-5e9f86682449&pf_rd_r=JHE0QDJCZJ0TYA0JWEKD&psc=1&refRID=JHE0QDJCZJ0TYA0JWEKD"> The Linux Command Line and Shell Scripting Bible</a></p>
+       <div style="margin: auto; text-align: center;"><img src="../assets/the-linux-bible.jpg" width="200px" height="250px" ></div>
+
+</body>
+<footer>
+    <a href="./awk.html" ><i class="fa fa-arrow-left"></i></a>
+    <a href="../home.html"><i class="fa fa-home"></i></a>
+    <a href="grep.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>

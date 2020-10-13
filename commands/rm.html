@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>rm command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>
+	</head>
+
+	<body>
+		<h1>Using the rm command</h1>
+		<h2>Description</h2>	
+			<p>removes files and directories</p>
+		<h2>Usage</h2>
+			<p>rm [options] [file/directory name]</p>
+		<h2>Examples</h2>
+			<p>Removes a single file</p>
+				<span>rm file.txt</span>
+			<p>Removes several files</p>
+				<span>rm file1.txt file.docx</span>
+			<p>Removes all files inside the present working directory</p>
+				<span>rm *</span>
+			<p>Removes a directory (this commands will remove a directory whether it is empty or not! Use it carefully!)</p>
+				<span>rm -r homework/</span>
+			<p>Removes an empty directory</p>
+				<span>rmdir labs/</span>
+		<h2>Let's see more complex examples</h2>
+			<p>Bob wants to remove 3 directories inside the Downloads directory (wallpapers, games, docs).</p>
+				<span>rm -r Downloads/{wallpapers,games,docs}</span>
+			<p>Bob is asked to remove all text files inside the script directory and all doc files inside the work directory</p>
+				<span>rm script/*.txt work/*.doc</span>
+			<p>Bob needs to remove all html and js files from two directories. He wants to make sure that only html or js files are removed.</p>
+				<span>rm website/{*.html,*.js} website2/{*.html,*.js}</span>
+	</body>
+
+</html>

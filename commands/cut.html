@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title>Cut</title>
+</head>
+<body>
+    <h1>The cut command</h1>
+    <h2>Description:</h2>
+        <p>The cut command is used to extract a specific section of each line of a file and display it to the screen </p>
+    <h2>Usage:</h2>
+        <p class="cmds">cut [option] [file]</p>
+    <h2>Example:</h2>
+        <p>Cut n number of bytes per line (1 byte = 1 character). This command will cut byte 1 2 3 4 5 of each line</p>
+        <p class="cmds">cut -b 1,2,3,4,5 usernames.txt</p>
+        <p>Cut a range of bytes per line</p>
+        <p class="cmds">cut -b 1-5 usernames.txt</p>
+        <p>Cut a by characters. Use this command to ensure that cut uses characters. There instances in which a character is more
+            than 1 byte long. This depends on the character encoding used to translate between characters and bytes. For example,
+            UTF-32 representes each character with 4 bytes, whereas, UTF-8 uses between 1 and 4 bytes.
+        </p>
+        <p class="cmds">cut -c 1,2,3 ipaddresses.txt</p>
+        <p>Cut a file using a delimeter like a comma or period. For example, the /etc/passwd file is separated by ":"
+            the following command will display a list of users in your system.
+        </p>
+        <p class="cmds">Cut -d ':' -f 1 /etc/passwd</p>
+        <p>Cut a file using a delimetter but changing the delimeter in the output. For example, the following command will list
+            all the users in your system and their login shell.
+        </p>
+        <p class="cmds">cut -d ':' -s  -f1,7  --output-delimeter="=" /etc/passwd</p>
+        <p>Cut a file using a new line as a delimeter. For example, the following command will display all the users and thir hashed
+            password each in a new line.
+        </p>
+        <p class="cmds">sudo cut -d ':' -f1,2 --output-delimeter=$'\n' /etc/shadow-</p>
+        <p>Cut a file excluding a given field</p>
+        <p class="cmds">cut -d ',' --complement -s -f3 users.txt</p>
+        <p> For more information, read the man page</p>        
+
+</body>
+<footer>
+    <a href="./tail.html" ><i class="fa fa-arrow-left"></i></a>
+    <a href="../home.html"><i class="fa fa-home"></i></a>
+    <a href="paste.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>

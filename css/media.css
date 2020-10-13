@@ -1,0 +1,287 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    h1{
+        font-size: 6em;
+    }
+
+    fieldset{
+        clear: left;
+        clear: right;
+        width: 100%;
+        font-size: 4em;
+        border: 0px 
+    }
+    legend {
+        font-size: 1em;
+
+    }
+    fieldset ul a li{
+        width: 80%;
+
+    }
+    fieldset button{
+        font-size: .5em;
+        background-color: #f4991a;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    footer p{
+
+        line-height: 1em;
+    
+    }
+  }
+
+/* iPhone 7 in portrait & landscape*/
+
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) { 
+
+    h1{
+        font-size: 6em;
+    }
+
+    fieldset{
+        clear: left;
+        clear: right;
+        width: 100%;
+        font-size: 4em;
+        border: 0px 
+    }
+    legend {
+        font-size: 1em;
+
+    }
+    fieldset ul a li{
+        width: 80%;
+
+    }
+    fieldset button{
+        font-size: .5em;
+        background-color: #f4991a;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    footer p{
+
+        line-height: 1em;
+    
+    }
+  }
+  
+  /*iPhone 7 in landscape*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : landscape) {     h1{
+    font-size: 6em;
+}
+
+fieldset{
+    clear: left;
+    clear: right;
+    width: 100%;
+    font-size: 4em;
+    border: 0px 
+}
+legend {
+    font-size: 1em;
+
+}
+fieldset ul a li{
+    width: 80%;
+
+}
+fieldset button{
+    font-size: .5em;
+    background-color: #f4991a;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+footer p{
+
+    line-height: 1em;
+
+}}
+  
+
+/* iPhone 7 in portrait*/
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait) {     h1{
+    font-size: 6em;
+}
+
+fieldset{
+    clear: left;
+    clear: right;
+    width: 100%;
+    font-size: 4em;
+    border: 0px 
+}
+legend {
+    font-size: 1em;
+
+}
+fieldset ul a li{
+    width: 80%;
+
+}
+fieldset button{
+    font-size: .5em;
+    background-color: #f4991a;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+footer p{
+
+    line-height: 1em;
+
+}}
+
+/* iPhone 7 Plus in portrait & landscape*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {     h1{
+    font-size: 6em;
+}
+
+fieldset{
+    clear: left;
+    clear: right;
+    width: 100%;
+    font-size: 4em;
+    border: 0px 
+}
+legend {
+    font-size: 1em;
+
+}
+fieldset ul a li{
+    width: 80%;
+
+}
+fieldset button{
+    font-size: .5em;
+    background-color: #f4991a;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+footer p{
+
+    line-height: 1em;
+
+}}
+
+
+/* iPhone 7 Plus in landscape*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {    
+     h1{
+    font-size: 6em;
+}
+
+fieldset{
+    clear: left;
+    clear: right;
+    width: 100%;
+    font-size: 4em;
+    border: 0px 
+}
+legend {
+    font-size: 1em;
+
+}
+fieldset ul a li{
+    width: 80%;
+
+}
+fieldset button{
+    font-size: .5em;
+    background-color: #f4991a;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+footer p{
+
+    line-height: 1em;
+
+}}
+
+/* iPhone 7 Plus in portrait*/
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {     
+    h1{
+    font-size: 6em;
+}
+
+fieldset{
+    clear: left;
+    clear: right;
+    width: 100%;
+    font-size: 4em;
+    border: 0px 
+}
+legend {
+    font-size: 1em;
+
+}
+fieldset ul a li{
+    width: 80%;
+
+}
+fieldset button{
+    font-size: .5em;
+    background-color: #f4991a;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+footer p{
+
+    line-height: 1em;
+
+} }
+
+/* Samsung Galaxy S9 Media Queries */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    h1{
+        font-size: 6em;
+    }
+    
+    fieldset{
+        clear: left;
+        clear: right;
+        width: 100%;
+        font-size: 4em;
+        border: 0px 
+    }
+    legend {
+        font-size: 1em;
+    
+    }
+    fieldset ul a li{
+        width: 80%;
+    
+    }
+    fieldset button{
+        font-size: .5em;
+        background-color: #f4991a;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    footer p{
+    
+        line-height: 1em;
+    
+    } 
+
+
+ }

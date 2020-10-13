@@ -1,0 +1,188 @@
+/* Defacto Style for home page*/
+/* Font guide
+heading 1 = Acme
+heading 2, 3 4 = Robotto Condensed
+paragraph = Roboto Slab
+commands = Roboto Mono
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Acme', sans-serif;
+1em = 16px
+----------------------------------
+Color palete: https://colorhunt.co/palette/44430
+background: #f9f5f0  
+h1: #321313
+h2 h3 h4: #f4991a
+background for menu: #f2ead3
+
+
+*/
+html{
+    background-color: #f9f5f0;
+
+}
+body{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 4%;
+}
+h1{
+    color:  #321313;
+    font-size: 4em;
+    font-family: 'Acme', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+h2{
+    color: #f4991a;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+fieldset{
+    margin-left: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 2%;;
+    width: 30%;
+    display: flexbox;
+    float: left;
+    border: 1px solid #321313;
+    background-color: #f2ead3;
+    
+}
+
+legend{
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #f9f5f0;
+}
+
+article ul{
+   
+    padding-bottom: .5%;
+    padding-top: .5%;
+}
+
+article ul li{
+    font-size: 1em;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1%;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 30%;
+    margin: auto;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    text-align: center;
+ 
+}
+article ul a{
+    text-decoration: none;
+    color: black;
+}
+article ul li:hover{
+    background-color: white;
+    transition: background-color 0.8s ease;
+}
+
+article button{
+    padding: 1%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+
+}
+article button:hover{
+    color: white;
+    background-color: #f4991a;
+    border: 1px solid #f4991a;
+    transition: background-color 0.8s ease;
+    transition: color 0.5s ease;
+    transition: border 0.5s ease;
+}
+
+
+footer{
+    clear: left;
+    margin: auto;
+    margin-top: 4%;
+    border-top: 4px solid #321313;
+    
+
+}
+
+footer h3{
+    color: #f4991a;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    margin-top: .5%;
+    margin-bottom: .5%;
+
+}
+
+footer p img{
+    border-radius: 50%;
+    float: left;
+    margin-right: 4%;
+
+}
+footer p a{
+    text-decoration: none;
+    color: inherit;
+}
+footer p a:hover{
+    background-color: #f4991a;
+    transition: background-image 1s ease;
+
+}
+footer p{
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.5em;
+
+}
+footer p span{
+
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    line-height: 2em;
+    text-decoration: underline;
+}
+
+blockquote{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #f5ddbf;
+    border-left: 1px solid black;
+    padding-left: 1%; 
+    padding-top: 1%;
+    padding-bottom: 1%;  
+    
+}
+blockquote h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+blockquote ul{
+    list-style-type: square;
+    margin-left: 2%;
+}

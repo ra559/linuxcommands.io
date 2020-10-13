@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>cp command</title>
+		<meta name="generator" content="Geany 1.32" />
+		<link rel="stylesheet" href="menu.css">
+		<style>
+			html{
+				background-color:#1E90FF;
+				}
+			body{
+				background-color: white;
+				width: 80%;
+				margin: auto;
+				margin-top: 5%;
+				border: 2px solid black;
+				padding: 2%;
+				 box-shadow: 
+					inset 0 -3em 3em rgba(0,0,0,0.1), 
+						0 0  0 2px rgb(255,255,255),
+						0.3em 0.3em 1em rgba(0,0,0,0.3);
+				}
+			span{
+				font-family:'courier';
+				background-color: #BFBFBF;
+				}  	
+			h1{
+				font-size: 6em;
+				text-align: center;
+				text-decoration: underline;
+				text-decoration-color: #1E90FF;
+				}
+			h2{
+				font-size: 3em;
+				}
+			h3{
+				font-size: 2em;
+				}
+			h4{
+				font-size: 2em;
+				}
+			p{
+				font-size: 1.5em;
+				}
+			span{
+				font-size: 1.5em;
+				}		
+			b{
+				color:  #055CCB;
+				}						
+		</style>	
+	</head>
+
+	<body>
+		    <span style="font-size:30px;cursor:pointer" class="sticky" onclick="openNav()" >&#9776; List</span>
+			<ul id="mySidenav" class="sidenav">
+
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+					<li><a href="ls.html">ls</a></li>
+					<li><a href="mkdir.html">mkdir</a></li>
+					<li><a href="touch.html">touch</a></li>
+					<li><a href="rm.html">rm</a></li>
+					<li><a href="mv.html">mv</a></li>
+					<li><a href="cp.html">cp</a></li>
+					<li><a href="link.html">Hard and Soft Links</a></li>
+					<li><a href="help.html">Getting Help</a></li>
+					<li><a href="wildcards.html">Wildcards/File Globing</a></li>		
+			</ul>
+		<h1>Using the cp command</h1>
+		<h2>Description</h2>
+			<p>Copies files and directories.</p>
+		<h2>Usage</h2>
+			<p>cp [options] [file to copy] [destination]</p>
+		<h2>Examples</h2>
+			<p>Copy a file with relative path</p>
+				<span>cp Downloads/pictures.zip Pictures/</span>
+			<p>Copy a directory with absolute path</p>
+				<span>cp -r /home/adrian/Downloads/hotels/ /home/adrian/Pictures/</span>
+			<p>Copy a file or directory using ~ and $HOME</p>
+				<span>cp ~/Pictures/hotels $HOME/Documents/</span>
+			<p>Copying multiple files in one command</p>
+				<span>cp Downloads/beach.png Pictes/hotel.png Documents/prices.xls ~Documents/ Sunda_trip</span>
+
+	</body>
+	<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			}
+			
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			}
+	</script>
+</html>

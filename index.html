@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<!--
+	-->
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Home</title>
+		<link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+		<script src="./scripts/loadMore.js"></script>
+		<link rel="stylesheet" href="./css/hstyle.css">
+		<link rel="stylesheet" href="./css/home.css">
+		<link rel="stylesheet" href="./css/media.css">
+		
+		
+	</head>
+
+	<body>
+		
+		<h1>CIS 106 | Linux Commands</h1>
+		<h2>A guide of Linux Commands for CIS 106 Linux Fundamentals</h2>
+		<article>
+			<fieldset><legend>Managing Files/directories</legend>
+			<ul>
+				<a href="./commands/ls.html"><li>ls </li> </a>
+				<a href="./commands/mkdir.html"> <li>mkdir </li></a>
+				<a href="./commands/touch.html"> <li>touch</li> </a>
+				<a href="./commands/rm.html"><li> rm </li></a>
+				<a href="./commands/mv.html"><li> mv </li></a>
+				<div id=more1 style="visibility: hidden; display: none;">
+					<a href="./commands/cp.html"><li>cp </li></a>
+					<a href="./commands/link.html"><li>Hard and Soft Links</li></a>
+					<a href="./commands/help.html"><li>Getting Help</li></a>
+					<a href="./commands/wildcards.html"><li>Wildcards</li></a>	
+				</div>		
+				<button onclick="more()" id="moreBtn">More</button>
+				<button onclick="less()" id="lessBtn" style="visibility: hidden; display:none;">Less</button>
+			</ul>
+		</fieldset>
+		</article>
+		<article>
+			<fieldset><legend>Handling Text Files</legend>
+				<ul>
+					<a href="./commands/cat.html"> <li> cat </li> </a>
+					<a href="./commands/tac.html"> <li>  tac </li> </a>
+					<a href="./commands/more.html"> <li>  more </li> </a>
+					<a href="./commands/less.html"> <li>  less </li> </a>
+					<a href="./commands/head.html"> <li>  head </li> </a>
+					<div id=more2 style="visibility: hidden; display: none;">
+						<a href="./commands/tail.html"> <li>  tail </li> </a>
+						<a href="./commands/cut.html"> <li>  cut </li> </a>
+						<a href="./commands/paste.html"> <li> paste </li> </a>
+						<a href="./commands/sort.html"> <li>  sort </li> </a>
+						<a href="./commands/wc.html"> <li>  wc </li> </a>
+						<a href="./commands/tr.html"> <li>  tr </li> </a>
+						<a href="./commands/diff.html"> <li>  diff </li> </a>
+						<a href="./commands/find.html"> <li>  find </li> </a>
+						<a href="./commands/gnome-open.html"> <li>  gnome-open </li> </a>
+						<a href="./commands/kde-open.html"> <li> kde-open </li> </a>
+						<a href="./commands/xdg-open.html"> <li> xdg-open </li> </a>
+						<a href="./commands/sed.html"> <li>sed </li> </a>
+						<a href="./commands/awk.html"> <li> awk </li> </a>
+						<a href="./commands/stdinstdoutredirection.html"> <li> STDIN/STDOUT Redirection </li> </a>
+						<a href="./commands/grep.html"> <li> grep </li> </a>
+						<a href="./commands/xargs.html"> <li> xargs </li> </a>
+						<a href="./commands/vim.html"> <li> vim </li> </a>
+						<a href="./commands/nano.html"> <li> nano </li> </a>
+					</div>		
+					<button onclick="more2()" id="moreBtn2">More</button>
+					<button onclick="less2()" id="lessBtn2" style="visibility: hidden; display:none;">Less</button>
+				</ul>
+			</fieldset>
+		</article>
+		<article>
+			<fieldset><legend>Networking </legend>
+				<ul>				
+					
+					<a href="./commands/ip.html"> <li> ip </li ></a>
+					<a href="./commands/ping.html"> <li> ping</li ></a>
+					<a href="./commands/ifconfig.html"> <li> ifconfig</li></a>
+					<a href="./commands/traceroute.html"> <li> traceroute</li></a>
+					<a href="./commands/dig.html"> <li> dig</li></a>
+					<div id=more3 style="visibility: hidden; display: none;">
+						<a href="./commands/nslookup.html"> <li> nslookup</li ></a>
+						<a href="./commands/netstat.html"> <li> netstat</li ></a>
+						<a href="./commands/ss.html"> <li> ss </li ></a>
+						<a href="./commands/telnet.html"> <li> telnet</li ></a>
+						<a href="./commands/ssh.html"> <li> ssh </li ></a>
+						<a href="./commands/scp.html"> <li> scp </li ></a>
+						<a href="./commands/w.html"> <li> w </li ></a>
+						<a href="./commands/nmap.html"> <li> nmap </li ></a>
+						<a href="./commands/ifup.html"> <li> ifup </li ></a>
+						<a href="./commands/ifdown.html"> <li> ifup </li ></a>
+						<a href="./commands/hostname.html"> <li> hostname </li ></a>
+						<a href="./commands/tracepath.html"> <li> tracepath </li ></a>
+						<a href="./commands/wget.html"> <li> wget </li ></a>
+						<a href="./commands/curl.html"> <li> curl </li ></a>
+
+					</div>
+					<button onclick="more3()" id="moreBtn3">More</button>
+					<button onclick="less3()" id="lessBtn3" style="visibility: hidden; display:none;">Less</button>
+				</ul>
+			
+			</fieldset>
+		</article>
+	</body>
+	<footer>
+		<blockquote>
+			<h4>Disclaimer:</h4>
+			<p>The material used for creating this collection of commands with examples is extracted from the sources bellow:
+				<p>Websites</p>
+
+				<ul>
+					<li> <a href="https://www.geeksforgeeks.org/">GeeksforGeeks.com</a> </li>
+					<li> <a href="https://www.linuxtechi.com/">Linux Techi Linux Tutorial & Guide</a> </li>
+					<li> <a href="https://www.computerhope.com/">Computer Hope.com</a></li>
+					
+				</ul>
+				<p>Books</p>
+				<ul>
+					<li><a href="https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/111898384X/ref=sr_1_3?crid=23L383S41SU7W&keywords=linux+command+line+and+shell+scripting+bible&qid=1573518278&s=books&sprefix=Linux+command+line+and+shell%2Cstripbooks%2C141&sr=1-3"> Linux Command Line and Shell Scripting Bible 3rd Edition By Richard Blum</a></li>
+					<li><a href="https://www.amazon.com/Linux-Administration-Beginners-Guide-Seventh/dp/0071845364/ref=sr_1_3?crid=88A1A8N8BG8A&keywords=linux+administration+a+beginners+guide&qid=1573518348&s=books&sprefix=Linux+Administr%2Cstripbooks%2C144&sr=1-3">Linux Administration: A Beginner’s Guide, Seventh Edition 7th Edition By Wale Soyinka</a></li>
+					<li><a href="https://www.amazon.com/CompTIA-Linux-Study-Guide-XK0-004/dp/1119556031/ref=sr_1_1?crid=1D3PP9ERLEP5Q&keywords=comptia+linux%2B+xk0-004&qid=1573518521&s=books&sprefix=Comptia+Linux%2B%2Cstripbooks%2C141&sr=1-1"> CompTIA Linux+ Study Guide: Exam XK0-004 4th Edition By Christine Bresnahan and Richard Blum</a></li>
+					
+				</ul>
+			</p>
+		</blockquote>
+		<h3>About The Author</h3>
+		<p><img src="./assets/0.jpeg" alt=""></p>
+		<p>	My name is <a href="https://www.linkedin.com/in/arobertalberto/"> Robert Alberto</a>. I am an Open Source and Linux advocate. <br>
+			I teach CIS 106 Linux Fundamentals at Passaic County Community College. <br>
+			I am a graduate student at New Jersey Institute of Technology where I obtained my undergraduate degree in Computer Technology with a concentration in Information Technology.
+			This website is being built to provide students with a centralized guide for Linux commands that they can use while completing assignments, doing projects, or studying.
+			In addition, this is a supplement to the material taught during the lecture and a quick reference for The Linux Workshop.<br>
+			Any feedback: <a href="mailto:cis106lf@gmail.com"><span>&#9993;</span></a> Email: cis106lf@gmail.com
+				
+	</footer>
+
+</html>

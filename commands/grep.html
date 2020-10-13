@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title>Grep</title>
+</head>
+ <body>
+    <h1>The grep command</h1>
+    <h2>Description:</h2>
+        <p> The grep command is used to match a string pattern from a file or standard output when using the pipe.</p>
+        <p style="font-size: 1.5em;">Common options of the grep command</p>
+        <table>
+            <tr>
+                <th>Option</th>
+                <th>Explanation</th>
+            </tr>
+            <tr>
+                <td>-i</td>
+                <td>Turns case sensitivity off</td>
+            </tr>
+            <tr>
+                <td>-n</td>
+                <td>Displays line number of the each line matched</td>
+            </tr>
+            <tr>
+                <td>-E</td>
+                <td>Treats the pattern as an <a href="https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions">extended regular expression</a> </td>
+            </tr>
+            <tr>
+                <td>-G</td>
+                <td>Treats the pattern as a <a href="https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions">basic regular expression</a> </td>
+            </tr>
+            <tr>
+                <td>-v</td>
+                <td>Inverts the search</td>
+            </tr>
+            <tr>
+                <td>-o</td>
+                <td>Only display the string matched</td>
+            </tr>
+        </table>
+    <h2>Usage:</h2>
+        <p class="cmds">grep [options] [pattern to match] [file]</p>
+        <p>Or if using pipe redirection</p>
+        <p class="cmds"> [STDOUT of command] | grep [option] [pattern to match]</p>
+    <h2>Example:</h2>
+        <p>Search for a given string in a file.</p>
+            <p class="cmds">grep "IP" data.csv</p>
+        <p>Search for a given string in a file with case insensitivity.</p>
+          <p class="cmds">grep -i "ip" data.csv</p>
+        <p>Search for a given string in multiple files.</p>
+          <p class="cmds">grep "user" file1 file2</p>
+        <p>Search for a string and show line numbers.</p>
+           <p class="cmds">grep -n "License" /usr/share/doc/bash/README</p>
+        <p>Search and highlight the pattern.</p>
+          <p class="cmds">grep --color "GNU" /usr/share/doc/bash/README</p>
+        <p>Display all the lines that do not match the pattern</p>
+            <p class="cmds">grep -v "GNU" /usr/share/doc/bash/README</p>
+        <p>Display only the string match without the line.</p>
+       <h3>Using grep with regular expressions</h3>
+            <p style="margin-left: 2%; border-left: 2px solid black; padding-left: 1%; ">A regular expression, regex or regexp (sometimes called a rational expression) 
+                is a sequence of characters that define a search pattern. Usually such patterns 
+                are used by string searching algorithms for "find" or "find and replace" 
+                operations on strings, or for input validation. It is a technique developed 
+                in theoretical computer science and formal language theory. <a href="https://en.wikipedia.org/wiki/Regular_expression"> (Wikipedia)</a>.</p>
+                <p style="font-weight: bold;">For your enrichment, I recommend you to read this <a href="https://www.digitalocean.com/community/tutorials/using-grep-regular-expressions-to-search-for-text-patterns-in-linux"> ARTICLE </a>by Digital Ocean.</p>
+                   
+        <p>The caret or circumflex symbol (^) is used for matching all the lines that start with a given string</p>
+            <p class="cmds">grep "^config" logbackup.log</p>        
+        <p>The dollar symbol ($) is used for matching all the lines that end with a given string</p>
+            <p class="cmds">grep "config$" logbackup.log</p>        
+        <p>Use the bracket expansions [] for matching a range of characters.</p>
+            <p>Matching all lines that contain any letter from a-z</p>
+                <p class="cmds">grep "[a-z]" logbackup.log</p> 
+            <p>Matching all lines that do not contain letters from a-g</p>
+                <p class="cmds">grep "[^a-g]" logbackup.log</p>
+            <p>Match all the lines that start with a capital letter</p>
+                <p class="cmds">grep "^[A-Z]" logbackup.log</p>
+                <h3>Regular Expressions character classes:</h3>
+        <table>
+            <tr>
+                <th>POSIX class</th>
+                <th>Represents</th>
+                <th>Means</th>
+            </tr>
+            <tr>
+                <td>[:upper:]</td>
+                <td>[A-Z]</td>
+                <td>Upper case letters</td>
+            </tr>
+            <tr>
+                <td>[:lower:]</td>
+                <td>[a-z]</td>
+                <td>Lower case letters</td>
+            </tr>
+            <tr>
+                <td>[:alpha:]</td>
+                <td>[A-Za-z]</td>
+                <td>Upper and Lower case letters</td>
+            </tr>
+            <tr>
+                <td>[:alnum:]</td>
+                <td>[A-Za-z0-9]</td>
+                <td>Lower case, upper case, and digits</td>
+            </tr>
+            <tr>
+                <td>[:digit:]</td>
+                <td>[0-9]</td>
+                <td>digits</td>
+            </tr>
+            <tr>
+                <td>[:xdigit:]</td>
+                <td>[0-9A-Fa-f]</td>
+                <td>hexadecimal digits</td>
+            </tr>
+            <tr>
+                <td>[:punct:]</td>
+                <td>[.,!?:...]</td>
+                <td>puctuation</td>
+            </tr>
+            <tr>
+                <td>[:blank:]</td>
+                <td>[\t]</td>
+                <td>space and tabs</td>
+            </tr>
+            <tr>
+                <td>[:cntrl:]</td>
+                <td>n/a</td>
+                <td>control characters</td>
+            </tr>
+            <tr>
+                <td>[:graph:]</td>
+                <td>[^\t\n\r\g\v]</td>
+                <td>printed characters without spaces</td>
+            </tr>
+            <tr>
+                <td>[:print:]</td>
+                <td>[^\t\n\r\g\v]</td>
+                <td>printed characters including spaces</td>
+            </tr>
+            <tr>
+                <td>[:space:]</td>
+                <td>[ \t\n\r\g\v]</td>
+                <td>whitespace characters</td>
+            </tr>
+            
+        </table>
+        <p>Match all lines that start with uppercase letters</p>
+            <p class="cmds">grep "^[[:upper:]]" /etc/passwd</p>
+        <p>Match all lines that end with a digit</p>
+            <p class="cmds">grep "[[:digit:]]$ data.csv"</p>
+        <p>Match only lines containing IPv4 addresses </p>
+            <p class="cmds"> grep -E '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}' ipaddresses</p>        
+        <p>Match one word or the other.</p>
+            <p class="cmds">grep -E 'hello|hi' file.txt</p>
+        <p>Grep can search for pattern sequences using {n}</p>
+            <p>Search all lines that contain a character repeated 3 times</p>
+                <p class="cmds">grep -E "A{3}" file.txt</p>
+            <p>Search all lines that contain a phone number of the format 973-111-2222 </p>
+                <p class="cmds">grep "[[:digit:]]\{3\}[-][[:digit:]]\{3\}[-][[:digit:]]\{4\}" file</p>
+        <p>The period character (.) is used to represent any single character. For example, 
+                search for all lines that contain any word ending in "able" and has 3 characters before "able".</p>
+                <p class="cmds">grep "...able" logbackup.log</p>       
+       <h2>Redirecting STDOUT to grep</h2>
+       <p>To redirect STDOUT use the pipe character (|).</p>
+       <p>Usage: [STDOUT of any command] | grep [option] [pattern to match]</p>
+       <h3>Examples:</h3>
+            <p>Display only the options of the of any command from its man page</p>
+                <p class="cmds"> man ls | grep "^[[:space:]]*[[:punct:]]"</p>
+            <p>Display all IP addresses from the output of the ip command and save it to a file.</p>
+                <p class="cmds">ip addr | grep -E '[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}' > ipaddresses</p>
+        
+        <p> For more information, read the man page</p>
+</body>
+<footer>
+    <a href="./stdinstdoutredirection.html" ><i class="fa fa-arrow-left"></i></a>
+    <a href="../home.html"><i class="fa fa-home"></i></a>
+    <a href="xargs.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>

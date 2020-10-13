@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/hstyle.css">
+        <link rel="stylesheet" href="../css/commandstyle.css">
+        <title>Tail</title>
+</head>
+<body>
+    <h1>The tail command</h1>
+    <h2>Description:</h2>
+    <p>Displays the last 10 lines of a given file</p>
+    <h2>Usage:</h2>
+    <p class="cmds">tail [option] [file]</p>
+    <h2>Example:</h2>
+    <p>Print the last 10 lines of a file</p>
+        <p class="cmds">tail /etc/passwd</p>
+    <p>Prints the last n number of a file</p>
+        <p class="cmds">tail -5 /etc/passwd</p>
+    <p>Prints the n number of given bytes of a file</p>
+        <p class="cmds"> tail -c 100 /etc/passwd</p>
+    <p>Supress the filename when more than one file is given</p>
+        <p class="cmds">tail -q /etc/passdwd file.txt</p>
+    <p>Display appended data</p>
+        <p class="cmds">tail -f access.log</p>
+</body>
+
+<footer>
+        <a href="./head.html" ><i class="fa fa-arrow-left"></i></a>
+        <a href="../home.html"><i class="fa fa-home"></i></a>
+        <a href="cut.html" ><i class="fa fa-arrow-right"></i></a>
+</footer>
+</html>
