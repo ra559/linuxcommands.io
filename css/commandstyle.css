@@ -1,4 +1,6 @@
 /* Defacto Style for home page*/
+
+
 /* Font guide
 heading 1 = Acme
 heading 2, 3 4 = Robotto Condensed
@@ -17,24 +19,30 @@ h1: #321313
 h2 h3 h4: #f4991a
 background for menu: #f2ead3
 */
-html{
-    background-color: #f9f5f0;
+
+html {
+    background-color: #f9f5f0 !important
 }
-body{
-    width: 80%;
+
+body {
+    width: 80% !important;
     display: block;
     margin: auto;
+    background-color: #f9f5f0 !important
 }
-h1{
-    color:#321313;
+
+h1 {
+    color: #321313;
     font-weight: bold;
-    font-family: 'Acme', sans-serif; 
-    font-size: 4em;
+    font-family: 'Acme', sans-serif;
+    font-size: 6em;
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: center;
 }
-h2,h3{
+
+h2,
+h3 {
     color: #f4991a;
     font-weight: bold;
     margin-top: 1%;
@@ -42,52 +50,67 @@ h2,h3{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2em;
 }
-p{
-    font-family: 'Roboto Slab', serif; 
+
+p,
+li,
+.navbar {
+    font-family: 'Roboto Slab', serif;
     line-height: 2em;
 }
-.cmds{
+
+.cmds {
     font-family: 'Roboto Mono', monospace;
     margin-left: 2%;
     border-left: 2px solid #321313;
     padding-left: 1%;
-    background-color:  #ffe6c7
+    background-color: #ffe6c7;
+    list-style-type: none;
+    font-weight: bold;
 }
-footer{
-    width: 50%;
-    margin: auto;
+
+.cmds-example {
+    list-style-type: none !important
 }
-footer a{
-    width: 20%;
-    display: flexbox;
-    float: left;
-    margin: auto;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    color: black;
-    font-size: 2em;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-top: 2%;
-    margin-bottom: 4%;
-}
-table, th, td {
+
+table,
+th,
+td {
     border: 1px solid black;
     padding: 5px;
     text-align: center;
-  }
-  table {
+}
+
+table {
     border-spacing: 15px;
     margin: auto;
     font-family: 'Roboto Mono', monospace;
+}
 
-  }
-  
-.commandscreenshot{
+.commandscreenshot {
     margin-left: 2%;
     margin-top: .50%;
     margin-bottom: .50%;
+}
+
+.footerimg {
+    width: 7%;
+    padding: 2%;
+    border: 1px solid red;
+}
+
+.footer_custom {
+    width: 70%;
+}
+
+.row-footer {
+    border: 1px solid green;
+}
+
+.navbar ul li a {
+    color: honeydew !important
+}
+
+.navbar ul li a:hover {
+    background-color: #f9f5f0;
+    color: black !important;
 }
