@@ -1,0 +1,13 @@
+html,
+body {
+    background-color: #f9f5f0 !important
+}
+
+nav form {
+    padding-right: 2%;
+    border: 1px solid red;
+}
+
+nav form input {
+    width: 50%;
+}
