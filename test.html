@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>Linux Commands</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!--custom CSS-->
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">Linux Commands</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,32 +34,57 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Previous</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="">Next</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
+
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
       </div>
     </div>
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.5.3</li>
-          <li>jQuery 3.5.1</li>
-        </ul>
-      </div>
+  
+    <!--Page Title cmd-->
+    <div class="container">
+        <div class='jumbotron'> <h1>The command here</h1></div>
+       
     </div>
-  </div>
+    <!--Description-->
+    <div class="container">
+        <h2>Description</h2><hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatibus natus non fuga nisi. Odio cupiditate at quo laborum hic magnam delectus facere eaque, repudiandae amet molestias ex. Dignissimos, tenetur?</p>
+    </div>
+
+    <!--Usage-->
+    <div class="container">
+        <h2>Usage</h2><hr>
+        <p class="cmds">command [option] [option] </p>
+    </div>
+
+    <!--Examples-->
+    <div class="container">
+        <h2>Examples</h2><hr>
+        <ul>
+            <li class="cmds-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit ipsa, temporibus at, quasi doloribus dicta ad quas repre</li>
+            <li class="cmds">command [option] [option] </li>
+            <li class="cmds-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit ipsa, temporibus at, quasi doloribus dicta ad quas repre</li>
+            <li class="cmds">command [option] [option] </li>
+            <li class="cmds-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit ipsa, temporibus at, quasi doloribus dicta ad quas repre</li>
+            <li class="cmds">command [option] [option] </li>
+            <li class="cmds-example">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit ipsa, temporibus at, quasi doloribus dicta ad quas repre</li>
+            <li class="cmds">command [option] [option] </li>
+        </ul>
+        <p>For more information, read the man page or help page of the given command</p>
+    </div>
+    <!--footer-->
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
