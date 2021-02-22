@@ -20,7 +20,7 @@ background for menu: #f2ead3
 
 */
 html,
-body,.jumbotron {
+body,.jumbotron{
     background-color: #f9f5f0 !important
 }
 
@@ -191,4 +191,19 @@ blockquote h4{
 blockquote ul{
     list-style-type: square;
     margin-left: 2%;
+}
+
+.overwrite{
+    background-color: #f9f5f0 !important;
+    color: black i !important;
+}
+.navbar-dark .navbar-brand a{
+    color: black i !important;
+    border: 1px solid red;
+}
+.nav-item a:hover{
+background-color: honeydew !important;
+}
+.navbar-toggler{
+    background-color: black !important;
 }
