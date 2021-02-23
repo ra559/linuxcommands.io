@@ -63,8 +63,7 @@ li,
     border-left: 2px solid #321313;
     padding-left: 1%;
     background: rgb(255,230,199);
-    background: linear-gradient(90deg, rgba(255,230,199,1) 28%, rgba(255,230,199,1) 37%, rgba(249,245,240,1) 72%);
-    list-style-type: none;
+    background: linear-gradient(90deg, rgba(255,230,199,1) 28%, rgba(255,230,199,1) 37%, rgba(249,245,240,1) 88%);    list-style-type: none;
     font-weight: bold;
 }
 
