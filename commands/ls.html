@@ -1,85 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>ls command</title>
-		<meta name="generator" content="Geany 1.32" />
-		<style>
-			html{
-				background-color:#1E90FF;
-				}
-			body{
-				background-color: white;
-				width: 80%;
-				margin: auto;
-				margin-top: 5%;
-				border: 2px solid black;
-				padding: 2%;
-				 box-shadow: 
-					inset 0 -3em 3em rgba(0,0,0,0.1), 
-						0 0  0 2px rgb(255,255,255),
-						0.3em 0.3em 1em rgba(0,0,0,0.3);
-				}
-			span{
-				font-family:'courier';
-				background-color: #BFBFBF;
-				}  	
-			h1{
-				font-size: 6em;
-				text-align: center;
-				text-decoration: underline;
-				text-decoration-color: #1E90FF;
-				}
-			h2{
-				font-size: 3em;
-				}
-			h3{
-				font-size: 2em;
-				}
-			h4{
-				font-size: 2em;
-				}
-			p{
-				font-size: 1.5em;
-				}
-			span{
-				font-size: 1.5em;
-				}		
-			b{
-				color:  #055CCB;
-				}
-						
-						
-		</style>
-	</head>
-	<body>
-		<h1>Using the ls command</h1>
-		<h2>Description</h2>
-		<p>list files and directories.</p>
-		<h2>Usage</h2>
-		<p>ls [options] [directory]</p>
 
-		<h3>Examples:</h3>
-			<p>list all files inside the present working directory</p>
-				<span>ls</span> 
-			<p>list all files inside the present working directory including hidden files</p>
-				<span>ls -a</span>
-			<p>long list all files inside the pwd</p>
-				<span>ls -l</span>
-			<p>you can convine different options for example:
-				long list all files including hidden files inside the </p>
-				<span>ls -la</span>	
-		<h3>lets see more complex examples:</h3>
-			<p>Bob wants to list all the files in the Music directory with the author</p>
-				<span>ls -la --author /home/$USER/Music</span>
-			<p>Bob's manager asked him to list of all the files (excluding hidden)
-			inside the home directory of a user named Maria including their file size in human
-			readable format and sorted by file size</p>
-				<span>ls -shS /home/Maria/Downloads</span>
-			<p>Bob wants to see the size, author, and inode number of 3 directories 'Virtual Machines' Music ".pccc's files"</p>
-				<span> ls -slid --author "Virtual Machines" Music ".pccc's files" </span>
-			<h4>for more options, read the man page of the ls command</h4>
-		
-	</body>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab&display=swap" rel="stylesheet">
+
+  <title>ls command</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--custom CSS-->
+    <link rel="stylesheet" href="../css/commandstyle.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top overwrite">
+    <div class="container">
+      <a class="navbar-brand " href="#">Linux Commands</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Previous</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Next</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  
+    <!--Page Title cmd-->
+    <div class="container">
+        <div class='jumbotron'> <h1>The ls command</h1></div>
+       
+    </div>
+    <!--Description-->
+    <div class="container">
+        <h2 class="text-left">Description</h2><hr>
+        <p>The ls command is used for listing files and directories. In other words, you can use the 
+          ls command to see whats inside a directory.
+        </p>
+      </div>
+
+    <!--Usage-->
+    <div class="container">
+        <h2 class="text-left">Usage</h2><hr>
+        <p class="cmds">ls [options] [directory or file] </p>
+    </div>
+
+    <!--Examples-->
+    <div class="container">
+        <h2 class="text-left">Examples</h2><hr>
+        <ul>
+            <li class="cmds-example">List all files inside the present working directory</li>
+              <li class="cmds">ls </li>
+            <li class="cmds-example">List all files inside the present working directory including hidden files</li>
+              <li class="cmds">ls -a </li>
+            <li class="cmds-example">Long list all files inside the pwd</li>
+              <li class="cmds">ls -l</li>
+            <li class="cmds-example">Long list all files including hidden files inside the present working directory</li>
+              <li class="cmds">ls -la</li>
+            <li class="cmds-example">Bob wants to list all the files in the Music directory with the author</li>
+              <li class="cmds"> ls -la --author ~/Music</li>
+            <li class="cmds-example"> Joe wants to see all the files in the Downloads directory sorted by modification time with human readable file sizes.</li>
+              <li class="cmds">ls -ath ~/Downloads</li>
+            <li class="cmds-example">Maria wants to see all the files in the /var/www/html/assets directory sorted by file extension, with human readable file sizes but without the user and the group information</li>  
+              <li class="cmds">ls -lhgGX /var/wwww/html/assets/</li>
+            
+            <li class="cmds-example">See all the options of the ls command</li> 
+              <li class="cmds">ls --help  | grep "^[[:space:]]*[[:punct:]]"</li> 
+            </ul>
+
+        <p>For more information, read the <a href="https://man7.org/linux/man-pages/man1/ls.1.html">man page </a> or help page of the given command</p>
+    </div>
+    <!--footer-->
+
+<div class="container">
+<!-- Bootstrap core JavaScript -->
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md text-center">
+      <img class="mb-2" src="../assets/Linux Workshop logo_COLOR_ScreenSize-01.png" width="180" height="180">
+      <small class="d-block mb-3 text-muted">&copy; 2019-2021</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Books I Recommend</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://rapurl.live/ecf">The Linux Command Line</a></li>
+        <li><a class="text-muted" href="https://rapurl.live/524">Linux Command Bible</a></li>
+        <li><a class="text-muted" href="https://rapurl.live/sbm">Linux Administration</a></li>
+        <li><a class="text-muted" href="https://rapurl.live/ab6">UNIX and Linux System Administration Handbook</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://rapurl.live/mfe">YouTube Channel</a></li>
+        <li><a class="text-muted" href="https://github.com/ra559/cis106">Github Page</a></li>
+        <li><a class="text-muted" href="https://www.jdoodle.com/test-bash-shell-script-online/">Online Bash IDE</a></li>
+        <li><a class="text-muted" href="https://codeanywhere.com/signin">Codeanywhere</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+</div>
+  
+ 
+</body>
 
 </html>
