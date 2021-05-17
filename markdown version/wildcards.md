@@ -13,7 +13,8 @@ Wildcard represents letters and characters used to specify a filename. File glob
 
 # Examples of the * Wildcard
 * List all the .png files in the present working directory.
-``
+`ls *.png`
+
 
 # Examples of the ? Wildcard
 
