@@ -65,6 +65,7 @@ li,
     background: rgb(255,230,199);
     background: linear-gradient(90deg, rgba(255,230,199,1) 28%, rgba(255,230,199,1) 37%, rgba(249,245,240,1) 88%);    list-style-type: none;
     font-weight: bold;
+
 }
 
 .cmds-example {
